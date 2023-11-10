@@ -11,4 +11,4 @@ jobs:
       - name: Install Make
         run: apk add --no-cache make
       - name: Run Make
-        run: make
+        run: make all
