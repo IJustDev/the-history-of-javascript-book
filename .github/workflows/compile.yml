@@ -1,5 +1,8 @@
 name: 'Compile'
 description: 'Compiles the book into pdf and epub'
+
+on: [push]
+
 jobs:
   build:
     runs-on: ubuntu-latest
