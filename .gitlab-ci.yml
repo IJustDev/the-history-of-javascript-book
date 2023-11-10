@@ -1,0 +1,13 @@
+stages:
+    - build
+
+build:
+    image: pandoc/latex:2.9.2
+    stage: build
+    script:
+        - sh create.sh
+    artifacts:
+        name: build
+        paths:
+            - output/nischenseiten.epub
+            - output/nischenseiten.pdf

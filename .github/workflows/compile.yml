@@ -1,0 +1,10 @@
+name: 'Compile'
+description: 'Compiles the book into pdf and epub'
+jobs:
+	build:
+		runs-on: ubuntu-latest
+		container:
+			image: pandoc/latex:2.9.2
+		steps:
+			- name: Run Make
+				run: make
