@@ -10,6 +10,8 @@ jobs:
       volumes:
         - ./:/data
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4
       - name: Install Make
         run: apk add --no-cache make
       - name: Run Make
